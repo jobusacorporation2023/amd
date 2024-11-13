@@ -1,0 +1,61 @@
+====================================================================
+Copyright (c) 2023 ADVANCED MICRO DEVICES, INC. All Rights Reserved.
+====================================================================
+AMD Sensor Fusion Hub
+---------------------
+AMD Sensor Fusion Hub (will be referred as SFH device) is a PCI Express Endpoint and Sensor UMDF driver
+
+++++++++++++++++++++++++++
+
+Revision History
+----------------
+1.1.0.10 24/April/2023
+    Change Log -> Added below list of features
+        * Added Custom Face Info sensor
+        * Added Custom Gesture Posture sensor
+        * Added Recorder custom sensor with support of Max 512 bytes of recorder data
+        * Added AFT test parameters and Proximity mode in Custom default leave sensor.
+        * Added Proximity mode parameter update support in Custom default leave sensor.
+        * Added Data within Limits(Updated by FW) check for Default Accel and Simple Device orientation sensors.
+        * Added HPD wake workaround for Windows OS issue(which was earlier reported on SFH 1.0)
+        * Added delay in Default proximity sensor before sending threshold update command (To fix issue of distance threshold and display change commands coming to driver at a time from OS)
+        * Added MP2 Timestamp change check for all sensors for exporting data to OS.
+        * Changed subcommand bit size from 6 to 8
+        * Changed Proximity and Config(App) memory offsets allocation to dynamic (Based on MP2 allocation)
+
+1.1.0.9 09/Mar/2023
+    Change Log -> Added below list of features
+        * Added Uncalibrated data logging to Rekey based sensor data logs
+        * Added support to dump MP2 Debug registers data to etl log
+        * Added support for Secondary Accel Data etl logging in KMDF driver based on DataReady interrupt
+        * Added support to send power state change notifications to MP2
+        * Added support to Send Disable All sensor command to MP2 during Uninstall of KMDF driver
+
+1.1.0.8 28/Nov/2022
+    Change Log -> Added below list of features
+        * Added Secondary Accel keys to export Raw data, calibration status.
+        * Added support for Primary Accel Data etl logging in KMDF driver based on DataReady interrupt
+        * Added support in KMDF driver to send Disable All sensor command in case of shutdown
+        * Updated SDK version to 22621
+
+1.1.0.5 20/Sep/2022
+    Change Log -> Added below list of features
+        * Modified GUIDs of KMDF and UMDF Drivers.
+        * Support to Disable all sensors before S4, Shutdown. If SDT is Open in these scenarios, OS wouldn't send it.
+        * Added Raw Accel, Raw ALS and Raw Mag custom sensors to export respective sensors Raw data.
+        * Added support to generate sensor data log files based on RegKey enablement in UMDF driver.
+        * Added Raw Gyro, IOB-OTD data keys in Custom Raw Accel sensor.
+        * Fixed Win11 Native HPD enumeration issue.
+        * Replaced AMD defined custom keys of SRA Sensor with MS defined custom keys.
+        * Added support to enable Max 80KB data copy from MP2 DRAM for the Applications.
+
+1.1.0.4 02/August/2022
+    Change Log -> Added below list of features
+        * Enabled Proximity sensors support
+
+1.1.0.3 29/June/2022
+    Change Log -> Added below list of features
+        * Enabled Motion Sensor and ALS.
+
+
+

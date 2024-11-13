@@ -1,0 +1,56 @@
+﻿Copyright (c)2020-2023 AMD Corporation.  All rights reserved.
+
+Installation Notes:
+-----------------------------------------------------------------------------------------------------
+Install via Command Prompt as outlined in the Readme file.
+
+Current Release:
+-----------------------------------------------------------------------------------------------------
+Version : 1.0.0.17
+Date	: 05-09-2022
+
+Major Changes to this driver package follows:
+
+1. The driver contains a fix for BSOD, which happens during S4.
+
+Revision History
+------------------------------------------------------------------------------------------------------
+Version : 1.0.0.16
+Date	: 09-30-2022
+
+Major Changes to this driver package follows:
+
+1. The driver contains a fix for BSOD, which happens during S4, when AMDUSB4CM is involved.
+
+Version : 1.0.0.10
+Date	: 02-22-2022
+
+Major Changes to this driver package follows:
+
+1. The driver has support for Windows 11.
+
+Version : 1.0.0.5
+Date	: 02-12-2021 
+
+Major Changes to this driver package follows:
+
+1. The driver is functionally complete.
+
+
+Limitations:
+-----------------------------------------------------------------------------------------------------
+
+
+Supported Chipsets:
+----------------------------------------------------------------------------------------------------
+1. Cezanne
+2. Rembrandt
+
+Supported Operating Systems:
+----------------------------------------------------------------------------------------------------
+1. Windows 11 64 bit.
+2. Windows 10 64 bit.
+
+----------------------------------------------------------------------------------------------------
+
+

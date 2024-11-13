@@ -1,0 +1,26 @@
+AMD Chipset Software Install Summary
+
+Name             : AMD GPIO Driver
+Version          : 2.2.0.130
+Install          : Success
+
+Name             : AMD PSP Driver
+Version          : 5.24.0.0
+Install          : Success
+
+Name             : AMD MicroPEP Driver
+Version          : 1.0.40.1
+Install          : Success
+
+Name             : AMD PPM Provisioning File Driver
+Version          : 8.0.0.20
+Install          : Success
+
+Name             : AMD Sensor Fusion Hub Driver
+Version          : 1.1.0.10
+Install          : Success
+
+Name             : AMD Interface Driver
+Version          : 2.0.0.12
+Install          : Success
+

@@ -1,0 +1,29 @@
+AMD 3D V-Cache Perfomance Optimizer Driver Release Notes
+----------------------------------------------
+
+Copyright
+---------
+(c) Copyright 2023 Advanced Micro Devices, Inc.  All rights reserved.
+ 
+                  
+Installation Notes:
+------------------
+Install via Windows Device Manager as outlined in the Readme.txt file
+
+Revision History:
+-----------------
+
+v1.0.0.7 12/16/2022
+- Added CPU names for Win10 VBS
+
+v1.0.0.6
+- Modified parallel queue to sequential queue.
+- added stress project.
+
+v1.0.0.4
+- Fix for the null token handle.
+- Added support for the UWP.
+
+Initial Release
+- This is a driver to improve the perfomance of AMD Ryzen based Desktop Chipsets.
+
